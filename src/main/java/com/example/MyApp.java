@@ -16,7 +16,6 @@ public class MyApp {
         System.out.println(messageService3.getMessage());
         System.out.println("hash jeden " + messageService.hashCode());
         System.out.println("hash dwa " + messageService2.hashCode());
-
         context.close();
     }
 }
