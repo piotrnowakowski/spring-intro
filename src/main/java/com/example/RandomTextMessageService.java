@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-@Component("messageService2")
 public class RandomTextMessageService implements MessageService{
     ArrayList<String> lista = new ArrayList<String>(){{
         add("m1");
