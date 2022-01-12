@@ -4,8 +4,10 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
-@Component("messageService2")
+@Configuration
 public class RandomTextMessageService implements MessageService{
     ArrayList<String> lista = new ArrayList<String>(){{
         add("m1");
@@ -19,7 +21,7 @@ public class RandomTextMessageService implements MessageService{
         add("m9");
         add("m10");
     }};
-
+    @Bean
     @Override
     public String getMessage() {
         int liczba = new Random().nextInt(9 + 1);
