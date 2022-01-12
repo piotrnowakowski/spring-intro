@@ -17,6 +17,5 @@ public class MyApp {
 
         System.out.println(messageService.getMessage());
         System.out.println(messageService2.getMessage());
-
     }
 }
